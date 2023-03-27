@@ -1,0 +1,164 @@
+/* Eleciones para el proyecto
+
+Colores:
+Header     = #171717
+Main       = #EDEDED
+Footer     = #444444
+Font-color = #DA0037
+
+Familia de Letras:
+Banner     = 'New Tegomin', serif;
+Titulos    = 'Roboto Slab', serif
+Subtitulos = 'Heebo', sans-serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+
+html{
+    font-size: 62.5%;
+}
+li{
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    font-family: 'New Tegomin', serif;
+    color: #EDEDED;
+    font-size: 1.5rem;
+    text-shadow: 0rem 0rem 1rem #DA0037;
+}
+h1 {
+    font-family: 'New Tegomin', serif;
+    color: #DA0037;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    text-shadow: 0px 0px 5px #EDEDED;
+}
+h2{
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    color: #000000;
+    font-size: 30px;
+    text-shadow: 0px 0px 2px #DA0037;
+}
+
+h3{
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    color: #000000;
+    font-size: 20px;
+    text-shadow: 0px 0px 2px #DA0037;
+}
+
+p{
+    font-family: 'Heebo', sans-serif;
+    font-size: 17px;
+}
+/* HEADER */
+.mini-banner{
+    background-color: #171717b7;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: end;
+    padding: 1rem 1.5rem;
+}
+nav #toggle,nav label{
+    display: none;
+}
+nav label{
+    display: inline-flex;
+    color: white;
+    cursor: pointer;
+}
+nav #toggle:checked ~ .menu{
+    height: 100%;
+}
+nav .menu{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+.nav-wrapper{
+    width: 100%;
+    margin: 0rem;
+    padding:  1rem;
+    background-color: #171717;
+    background-image: url(../assets/img/icon/setflix-3.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.menu ul{
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 0rem;
+}
+.menu ul li{
+    padding: 1rem;
+}
+
+/* MAIN */
+main{
+    background-color: #EDEDED;
+}
+.conteiner-busqueda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3rem 3rem;
+}
+.conteiner-busqueda  input{
+    padding: 0.3rem;
+    border-radius: 2.5rem;
+    border: 0.1rem solid #DA0037;
+}
+.button-index {
+    background: #171717b7;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    justify-content: center;
+    padding: .8rem 1rem;
+    user-select: none;
+    width: 5rem;
+    border: 0;
+}
+.button-index:active,.button-index:focus {
+    border-bottom-style: none;
+    border-color: #171717b7;
+    box-shadow: #DA0037 0 0 0.3rem ;
+}
+
+/* INDEX */
+.conteiner-cards{
+    display: flex;
+    flex-direction: column;
+    background-color: #EDEDED;
+    margin-left: 2rem;
+}
+.conteiner-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem 2.5rem;
+}
+
+/* FOOTER */
+footer{
+    background-color: #444444;
+    padding-right: 1rem; 
+}
+.container-footer-ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 2rem ;
+    list-style: none;
+}
