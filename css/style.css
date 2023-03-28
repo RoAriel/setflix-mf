@@ -107,11 +107,14 @@ nav .menu{
 /* MAIN */
 main{
     background-color: #EDEDED;
+    min-height: 100vh;
 }
+
 .conteiner-busqueda {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     padding: 3rem 3rem;
 }
 .conteiner-busqueda  input{
@@ -125,10 +128,15 @@ main{
     box-sizing: border-box;
     cursor: pointer;
     justify-content: center;
-    padding: .8rem 1rem;
     user-select: none;
-    width: 5rem;
-    border: 0;
+    width: 3.2rem;
+    border: 0;  
+}
+
+.button-index img{
+    object-fit: cover;
+    width: 3rem;
+    height: 3rem;
 }
 .button-index:active,.button-index:focus {
     border-bottom-style: none;
@@ -139,10 +147,12 @@ main{
 /* INDEX */
 .conteiner-cards{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
+    align-items: center;
     background-color: #EDEDED;
     margin-left: 1rem;
-
+    margin-right: 1rem;
+    
 }
 .conteiner-card{
     display: flex;
@@ -150,8 +160,9 @@ main{
     align-items: center;
     margin: 2.5rem 2.5rem;
     width: 20rem;
-    height: 50em;
+    height: 34rem;
 }
+
 
 .conteiner-card img{
     object-fit: cover;
@@ -162,12 +173,12 @@ main{
 /* FOOTER */
 footer{
     background-color: #444444;
-    padding-right: 1rem; 
+    margin-bottom: auto;
 }
+
 .container-footer-ul {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-right: 2rem ;
+    justify-content: space-evenly;
     list-style: none;
 }
