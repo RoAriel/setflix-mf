@@ -47,7 +47,7 @@ h2 {
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
     color: #000000;
-    font-size: 30px;
+    font-size: 3rem;
     text-shadow: 0px 0px 2px #DA0037;
 }
 
@@ -55,13 +55,13 @@ h3 {
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
     color: #000000;
-    font-size: 20px;
+    font-size: 2rem;
     text-shadow: 0px 0px 2px #DA0037;
 }
 
 p {
     font-family: 'Heebo', sans-serif;
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 
 /* HEADER */
@@ -300,13 +300,30 @@ h4{
     padding: 0.3rem 0.3rem;
 }
 
-
+/* PAGE NOSOTROS*/
+.section-nosotros{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.conteiner-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem 1.5rem;
+}
+.conteiner-nosotros-text{
+    background-color: #0000003f;
+    border-radius: 5rem;
+    padding: 4rem 4rem;
+    margin: 1rem;
+    font-weight: bolder;
+}
 /* FOOTER */
 footer {
     background-color: #444444;
     margin-bottom: auto;
 }
-
 
 .container-footer-ul {
     display: flex;
