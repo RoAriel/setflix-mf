@@ -38,7 +38,7 @@ h1 {
     font-family: 'New Tegomin', serif;
     color: #DA0037;
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
     letter-spacing: 0.3rem;
     text-shadow: 0px 0px 5px #EDEDED;
 }
@@ -67,6 +67,7 @@ p {
 /* HEADER */
 .mini-banner {
     background-color: #171717b7;
+    padding-bottom: 0.5rem;
 }
 
 nav {
@@ -330,4 +331,143 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
+}
+
+@media(min-width:768px){
+    .conteiner-busqueda{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas:
+        ". item-b1 item-b2 .";
+        justify-items: center;
+    }
+    .item-b1{
+        grid-area: item-b1 ;
+        justify-items: end;
+    }
+    .item-b2{
+        grid-area: item-b2 ;
+        justify-items: start;
+    }
+    .conteiner-cards {
+        background-color: #EDEDED;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "card-1 card-2"
+        "card-3 card-4";
+        justify-items: center;
+    }
+    .card-1{
+        grid-area: card-1;
+    }
+    .card-2{
+        grid-area: card-2;
+    }
+    .card-3{
+        grid-area: card-3;
+    }
+    .card-4{
+        grid-area: card-4;
+    } 
+}
+
+@media(min-width:1024px){
+    nav {
+        display: inline;
+        padding: 1rem 1.5rem;
+    }
+    nav label {
+        display: none;
+    }
+
+    nav #toggle:optional~.menu {
+        height: 100%;
+    }
+
+
+    nav .menu {
+        width: 100%;
+        height: 0;
+    }
+    
+    .nav-wrapper {
+        width: 100%;
+        margin: 0rem;
+        padding: 1rem;
+        background-color: #171717;
+        background-image: url(../assets/img/icon/setflix-3.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    .menu ul {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas: 
+        "item-m1 item-m2 item-m3 item-m4";
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+        justify-items: center;
+        list-style:none;
+    }
+    .item-m1{
+        grid-area: item-m1;
+    }
+    .item-m2{
+        grid-area: item-m2;
+
+    }
+    .item-m3{
+        grid-area: item-m3;
+
+    }
+    .item-m4{
+        grid-area: item-m4;
+
+    }
+    .conteiner-busqueda{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas:
+        ". item-b1 item-b2 .";
+        justify-items: center;
+        padding: 3rem 1.5rem;
+    }
+    .item-b1{
+        grid-area: item-b1 ;
+        justify-items: end;
+    }
+    .item-b2{
+        grid-area: item-b2 ;
+        justify-items: start;
+    }
+    .conteiner-cards {
+        background-color: #EDEDED;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas:
+        "card-1 card-2 card-3 card-4";
+        justify-items: center;
+    }
+    .card-1{
+        grid-area: card-1;
+    }
+    .card-2{
+        grid-area: card-2;
+    }
+    .card-3{
+        grid-area: card-3;
+    }
+    .card-4{
+        grid-area: card-4;
+    } 
 }
