@@ -229,6 +229,7 @@ main {
     background-color: #EDEDED;
 }
 
+
 /* PAGE SERIES */
 
 .container-temporadas{
@@ -242,7 +243,7 @@ h4{
     font-family: 'Roboto Slab', serif;
     color: #EDEDED;
     font-weight: bolder;
-    font-size: 21.5rem0px;
+    font-size: 1.6rem;
     text-shadow: 0rem 0rem 100rem #171717b7;
     text-align: center;
 }
@@ -333,7 +334,10 @@ footer {
     list-style: none;
 }
 
+
 @media(min-width:768px){
+        /*INDEX*/
+
     .conteiner-busqueda{
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -344,14 +348,14 @@ footer {
     }
     .item-b1{
         grid-area: item-b1 ;
-        justify-self: end;
+        justify-self: center;
     }
     .item-b2{
         grid-area: item-b2 ;
         justify-self: start;
-        padding: 0.25rem;
+        padding-left: 2.25rem;
     }
-    .conteiner-cards {
+    .conteiner-cards{
         background-color: #EDEDED;
         margin-left: 1rem;
         margin-right: 1rem;
@@ -374,10 +378,43 @@ footer {
     }
     .card-4{
         grid-area: card-4;
-    } 
+    }
+
+    /*PAGE: peliculas*/
+    .conteiner-section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,34rem);
+        grid-template-areas: 
+        "item-p1  item-p2"
+        "item-p3  item-p4"
+        "item-p5  item-p5";
+        justify-items: center;
+        
+    }
+    .item-p1{
+        grid-area: item-p1;       
+    }
+    .item-p2{
+        grid-area: item-p2;
+        align-self: start;
+    }  
+    .item-p3{
+        grid-area: item-p3;
+        align-self: start;
+    }
+    .item-p4{
+        grid-area: item-p4;
+        align-self: start;
+    }
+    .item-p5{
+        grid-area: item-p5;
+        align-self: start;
+    }      
 }
 
 @media(min-width:1024px){
+    /*INDEX*/
     nav {
         display: inline;
         padding: 0.5rem 0.5rem;
@@ -442,11 +479,11 @@ footer {
     }
     .item-b1{
         grid-area: item-b1 ;
-        justify-items: end;
+        justify-self: end;
     }
     .item-b2{
         grid-area: item-b2 ;
-        justify-items: start;
+        justify-self: start;
     }
     .conteiner-cards {
         background-color: #EDEDED;
