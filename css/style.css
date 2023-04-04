@@ -280,16 +280,16 @@ h4{
     padding: 3rem 3rem;
     
 }
-.conteiner-busqueda-av-ul{
+.conteiner-busqueda-av{
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style: none;
 }
-.conteiner-busqueda-av-ul li {
+.conteiner-busqueda-av div {
     padding: 1rem;
 }
-.conteiner-busqueda-av-ul li input{
+.conteiner-busqueda-av div input{
     padding: 0.5rem;
     border-radius: 1.5rem;
     border: 0.1rem solid #DA0037;
@@ -302,7 +302,9 @@ h4{
     justify-content: space-around;
     padding: 0.3rem 0.3rem;
 }
-
+.inp-altura{
+    height: 2.5rem;
+}
 /* PAGE NOSOTROS*/
 .section-nosotros{
     display:flex;
@@ -433,6 +435,13 @@ footer {
         grid-area: item-s3;
         align-self: center;
     }
+    /*PAGE BUSQUEDA AVANZADA*/
+    .conteiner-busqueda-av{
+        flex-direction: row;
+    }
+
+
+
 }
 
 @media(min-width:1024px){
