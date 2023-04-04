@@ -344,11 +344,12 @@ footer {
     }
     .item-b1{
         grid-area: item-b1 ;
-        justify-items: end;
+        justify-self: end;
     }
     .item-b2{
         grid-area: item-b2 ;
-        justify-items: start;
+        justify-self: start;
+        padding: 0.25rem;
     }
     .conteiner-cards {
         background-color: #EDEDED;
@@ -379,7 +380,7 @@ footer {
 @media(min-width:1024px){
     nav {
         display: inline;
-        padding: 1rem 1.5rem;
+        padding: 0.5rem 0.5rem;
     }
     nav label {
         display: none;
