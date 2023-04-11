@@ -1,0 +1,11 @@
+{
+  "name": "proyecto-setflix-mf",
+  "version": "1.0.0",
+  "description": "Proyecto para el curso de [**Desarrollo Web**](https://www.coderhouse.com/online/desarrollo-web-online) de [**Coderhouse**](https://www.coderhouse.com/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

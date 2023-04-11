@@ -1,5 +1,8 @@
+  
 
 # Setflix
+
+  
 
   
 
@@ -7,30 +10,90 @@ Proyecto para el curso de [**Desarrollo Web**](https://www.coderhouse.com/online
 
   
 
+  
+
 La idea es maquetar una web de contenido multimedia el cual estará dedicado a series y películas.
 
   
+
   
 
 ## Desarrollo
 
+  
+
 Las tecnologías utilizadas para el desarrollo de esta web serán:
+
+  
 
 - HTML
 
+  
+
 - CSS
+
+  
 
 - Flex
 
+  
+
 - Grid
 
+  
+
 - Bootstrap
+
+  
+
+- Preprocesador : [Sass](#id1)
+
+  
 
 Futuras tecnologías serán agregadas y documentadas aquí.
 
   
+
   
 
 ## Github-page
 
-Podes ver como va quedando armado el proyecto [**SETFLIX**](https://roariel.github.io/setflix-mf/)
+  
+
+Podes ver como va quedando el proyecto armado [**SETFLIX**](https://roariel.github.io/setflix-mf/)
+
+  
+
+# Sass
+
+  
+
+Para poder modificar el estilo que tiene el proyecto vas a tener que seguir unos pasos:
+
+  
+
+1. Si es la primera vez que vas a usar Sass tenes que instalar [**Node**](https://nodejs.org/es) como primer paso.
+
+  
+
+2. Seguido a la instalación tenes que abrir una terminal y clonar el repositorio.
+
+  
+
+3. En la ruta donde esta el proyecto clonado, ejecuta las siguientes lineas para poder comenzar a editar lo que gustes:
+
+  
+
+```
+
+npm init
+
+npm install -g sass
+
+sass --watch ./scss/style.scss ./css/style.css
+
+```
+
+### Importante:
+
+Tenes que dejar la terminal siempre abierta para que sass pueda ir compilando los cambios que agregues dentro del .css 
