@@ -1,0 +1,42 @@
+
+.conteiner-section-serie{
+        @extend .conteiner-cards;
+        
+        .estilo-1 {
+            @include flex(column, none, none, none);
+            padding: 2rem 2rem;
+            letter-spacing: 0.3rem;
+
+
+        }
+
+    .container-temporadas {
+        @include flex(column, none, none, none);
+        padding: 2rem;
+        padding-bottom: 1rem;
+
+        .container-temporada {
+            @include flex(column, none, none, none);
+            background-color: $color-font;
+            border-radius: 0.30rem;
+            margin-bottom: 1rem;
+
+            div {
+                .container-lista-cap {
+                    @include flex(row, space-evenly, none, none);
+                    list-style: none;
+
+                    li {
+                        margin: 1rem 1rem;
+                        padding: 0.25rem;
+                        background-color: $color-footer;
+                        border-radius: 0.30rem;
+                        font-family: $font-titulos;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -8,10 +8,7 @@ main {
     }
 
     .conteiner-busqueda {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flex(row, space-evenly, center, none);
         padding: 3rem 3rem;
 
         input {
@@ -52,17 +49,13 @@ main {
 
     section {
         .conteiner-cards {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #EDEDED;
+            @include flex(column, none, center, none);
+            background-color: $color-main;
             margin-left: 1rem;
             margin-right: 1rem;
 
             .conteiner-card {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flex(column, none, center, none);
                 margin: 2.5rem 2.5rem;
                 width: 20rem;
                 height: 34rem;

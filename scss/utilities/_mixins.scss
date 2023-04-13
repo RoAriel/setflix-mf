@@ -5,3 +5,11 @@
     font-size: $size;
     text-shadow: $shadow;
 }
+
+@mixin flex($direction,$just-cont,$ali-item,$wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $just-cont;
+    align-items: $ali-item;
+    flex-wrap: $wrap;
+}
