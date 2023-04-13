@@ -1,0 +1,31 @@
+.conteiner-section {
+    @include flex(column, none, center, none);
+    background-color: $color-main;
+
+    @extend .conteiner-cards;
+
+    .estilo-1 {
+        p {
+            padding: 1rem 1rem;
+            letter-spacing: 0.2rem;
+        }
+    }
+
+    .estilo-2 {
+        @include flex(column, none, none, none);
+        padding: 1.5rem 1.5rem;
+
+        .bold-cursivo {
+            font-weight: bold;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        p{
+            padding: 0.25rem 0.25rem;
+            letter-spacing: 0.2rem;
+            align-self: center;
+        }
+
+    }
+}
