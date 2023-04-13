@@ -1,11 +1,11 @@
 footer {
     background-color: #444444;
     margin-bottom: auto;
-}
 
-.container-footer-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style: none;
+    }
 }

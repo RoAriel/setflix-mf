@@ -8,35 +8,27 @@ li {
 
 a {
     text-decoration: none;
-    font-family: $font-banner;
-    color: $color-main;
-    font-size: 1.5rem;
-    text-shadow: 0rem 0rem 1rem $color-font;
+    @include format-text($font-banner,$color-main,1.5rem,0rem 0rem 1rem $color-font);
 }
 
 h1 {
-    font-family: $font-banner;
-    color: $color-font;
+    @include format-text($font-banner,$color-font,2rem,0px 0px 5px $color-main);
     text-align: center;
-    font-size: 2rem;
     letter-spacing: 0.3rem;
-    text-shadow: 0px 0px 5px $color-main;
 }
 
 h2 {
-    text-decoration: none;
-    font-family: $font-banner;
-    color: #000000;
-    font-size: 3rem;
-    text-shadow: 0px 0px 2px $color-font;
+    @include format-text($font-titulos,#000000,3rem,0px 0px 2px $color-font);
 }
 
 h3 {
-    text-decoration: none;
-    font-family: $font-titulos;
-    color: #000000;
-    font-size: 2rem;
-    text-shadow: 0px 0px 2px $color-font;
+    @include format-text($font-subtitulos,#000000 ,2rem,0px 0px 2px $color-font);
+}
+
+h4{
+    @include format-text($font-titulos,$color-main,1.6rem,0rem 0rem 100rem #171717b7);
+    font-weight: bolder;
+    text-align: center;
 }
 
 p {

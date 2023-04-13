@@ -1,0 +1,7 @@
+
+@mixin format-text($font-family, $color, $size, $shadow){
+    font-family: $font-family;
+    color:$color;
+    font-size: $size;
+    text-shadow: $shadow;
+}
