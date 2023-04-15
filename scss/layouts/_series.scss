@@ -3,7 +3,7 @@
         @extend .conteiner-cards;
         
         .estilo-1 {
-            @include flex(column, none, none, none);
+            @include flex(column, none, none, nowrap);
             padding: 2rem 2rem;
             letter-spacing: 0.3rem;
 
@@ -11,19 +11,19 @@
         }
 
     .container-temporadas {
-        @include flex(column, none, none, none);
+        @include flex(column, none, none, nowrap);
         padding: 2rem;
         padding-bottom: 1rem;
 
         .container-temporada {
-            @include flex(column, none, none, none);
+            @include flex(column, none, none, nowrap);
             background-color: $color-font;
             border-radius: 0.30rem;
             margin-bottom: 1rem;
 
             div {
                 .container-lista-cap {
-                    @include flex(row, space-evenly, none, none);
+                    @include flex(row, space-evenly, none, nowrap);
                     list-style: none;
 
                     li {

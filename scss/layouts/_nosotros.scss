@@ -1,0 +1,16 @@
+.section-nosotros{
+    @include flex(column,center,none,nowrap);
+
+    .conteiner-nosotros{
+        @include flex(column,space-evenly,none,nowrap);
+        padding: 1rem 1.5rem;
+    }
+
+    .conteiner-nosotros-text{
+        background-color: #0000003f;
+        border-radius: 5rem;
+        padding: 4rem 4rem;
+        margin: 1rem;
+        font-weight: bolder;
+    }
+}

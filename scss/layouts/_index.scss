@@ -8,7 +8,7 @@ main {
     }
 
     .conteiner-busqueda {
-        @include flex(row, space-evenly, center, none);
+        @include flex(row, space-evenly, center, nowrap);
         padding: 3rem 3rem;
 
         input {
@@ -49,13 +49,13 @@ main {
 
     section {
         .conteiner-cards {
-            @include flex(column, none, center, none);
+            @include flex(column, none, center, nowrap);
             background-color: $color-main;
             margin-left: 1rem;
             margin-right: 1rem;
 
             .conteiner-card {
-                @include flex(column, none, center, none);
+                @include flex(column, none, center, nowrap);
                 margin: 2.5rem 2.5rem;
                 width: 20rem;
                 height: 34rem;

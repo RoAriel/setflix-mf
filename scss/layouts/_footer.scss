@@ -1,11 +1,9 @@
 footer {
-    background-color: #444444;
+    background-color: $color-footer;
     margin-bottom: auto;
 
     ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        @include flex(row, space-evenly, none, nowrap);
         list-style: none;
     }
 }

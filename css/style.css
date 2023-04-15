@@ -131,7 +131,7 @@ main .conteiner-busqueda {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   padding: 3rem 3rem;
 }
 main .conteiner-busqueda input {
@@ -164,7 +164,7 @@ main section .conteiner-cards, main section .conteiner-section, main section .co
   flex-direction: column;
   justify-content: none;
   align-items: center;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   background-color: #EDEDED;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -174,7 +174,7 @@ main section .conteiner-cards .conteiner-card, main section .conteiner-section .
   flex-direction: column;
   justify-content: none;
   align-items: center;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   margin: 2.5rem 2.5rem;
   width: 20rem;
   height: 34rem;
@@ -190,7 +190,7 @@ main section .conteiner-cards .conteiner-card img, main section .conteiner-secti
   flex-direction: column;
   justify-content: none;
   align-items: none;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   padding: 2rem 2rem;
   letter-spacing: 0.3rem;
 }
@@ -199,7 +199,7 @@ main section .conteiner-cards .conteiner-card img, main section .conteiner-secti
   flex-direction: column;
   justify-content: none;
   align-items: none;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   padding: 2rem;
   padding-bottom: 1rem;
 }
@@ -208,7 +208,7 @@ main section .conteiner-cards .conteiner-card img, main section .conteiner-secti
   flex-direction: column;
   justify-content: none;
   align-items: none;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   background-color: #DA0037;
   border-radius: 0.3rem;
   margin-bottom: 1rem;
@@ -218,7 +218,7 @@ main section .conteiner-cards .conteiner-card img, main section .conteiner-secti
   flex-direction: row;
   justify-content: space-evenly;
   align-items: none;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   list-style: none;
 }
 .conteiner-section-serie .container-temporadas .container-temporada div .container-lista-cap li {
@@ -236,7 +236,7 @@ main section .conteiner-cards .conteiner-card img, main section .conteiner-secti
   flex-direction: column;
   justify-content: none;
   align-items: center;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   background-color: #EDEDED;
 }
 .conteiner-section .estilo-1 p {
@@ -248,7 +248,7 @@ main section .conteiner-cards .conteiner-card img, main section .conteiner-secti
   flex-direction: column;
   justify-content: none;
   align-items: none;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   padding: 1.5rem 1.5rem;
 }
 .conteiner-section .estilo-2 .bold-cursivo {
@@ -300,6 +300,29 @@ section .container-resultado {
   height: 2.5rem;
 }
 
+.section-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: none;
+  flex-wrap: nowrap;
+}
+.section-nosotros .conteiner-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-wrap: nowrap;
+  padding: 1rem 1.5rem;
+}
+.section-nosotros .conteiner-nosotros-text {
+  background-color: rgba(0, 0, 0, 0.2470588235);
+  border-radius: 5rem;
+  padding: 4rem 4rem;
+  margin: 1rem;
+  font-weight: bolder;
+}
+
 footer {
   background-color: #444444;
   margin-bottom: auto;
@@ -308,6 +331,8 @@ footer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: none;
+  flex-wrap: nowrap;
   list-style: none;
 }
 
