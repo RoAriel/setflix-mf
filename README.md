@@ -82,16 +82,12 @@ Para poder modificar el estilo que tiene el proyecto vas a tener que seguir unos
 
 3. En la ruta donde esta el proyecto clonado, ejecuta las siguientes lineas para poder comenzar a editar lo que gustes:
 
-  
-
 ```
-
 npm init
 
 npm install -g sass
 
 sass --watch ./scss/style.scss ./css/style.css
-
 ```
 
 ### Importante:
@@ -99,6 +95,5 @@ Lo mencionado en el punto 3 solo se hace la primera vez que vamos a correr sass,
 
 ```
 sass --watch ./scss/style.scss ./css/style.css
-
 ```
 Tenes que dejar la terminal siempre abierta para que sass pueda ir compilando los cambios que agregues dentro del .css 
