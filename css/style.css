@@ -262,6 +262,44 @@ main section .conteiner-cards .conteiner-card img, main section .conteiner-secti
   align-self: center;
 }
 
+.section-busqueda {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 3rem 3rem;
+}
+.section-busqueda .conteiner-busqueda-av {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+.section-busqueda .conteiner-busqueda-av div {
+  padding: 1rem;
+}
+.section-busqueda .conteiner-busqueda-av div input {
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  border: 0.1rem solid #DA0037;
+}
+
+section .container-resultado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: none;
+  flex-wrap: wrap;
+  padding: 0.3rem 0.3rem;
+}
+
+.inp-altura {
+  height: 2.5rem;
+}
+
 footer {
   background-color: #444444;
   margin-bottom: auto;

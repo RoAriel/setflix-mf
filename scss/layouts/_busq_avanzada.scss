@@ -1,0 +1,32 @@
+.section-busqueda{
+    @include flex(column,none,center,nowrap);
+    padding: 3rem 3rem;
+
+    .conteiner-busqueda-av{
+        @include flex(column,none,center,nowrap);
+        list-style:none;
+        
+        div{
+            padding: 1rem;
+
+            input{
+                padding: 0.5rem;
+                border-radius: 1.5rem;
+                border: 0.1rem solid $color-font;
+
+            }
+        }
+    }
+}
+
+section{
+
+    .container-resultado{
+        @include flex(row,space-around,none,wrap);
+        padding: 0.3rem 0.3rem;
+    }
+}
+
+.inp-altura{
+    height: 2.5rem;
+}
