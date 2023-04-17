@@ -384,8 +384,8 @@ footer ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 34rem);
-    grid-template-areas: "item-s1  item-s2" "item-s3  item-s3";
     justify-items: center;
+    grid-template-areas: "item-s1  item-s2" "item-s3  item-s3";
   }
   section .item-s1 {
     grid-area: item-s1;
@@ -397,6 +397,34 @@ footer ul {
   section .item-s3 {
     grid-area: item-s3;
     align-self: center;
+  }
+  /*PAGE: peliculas*/
+  section .conteiner-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 34rem);
+    justify-items: center;
+    grid-template-areas: "item-p1  item-p2" "item-p3  item-p4" "item-p5  item-p5";
+  }
+  section .item-p1 {
+    grid-area: item-p1;
+    padding: 1rem;
+  }
+  section .item-p2 {
+    grid-area: item-p2;
+    align-self: start;
+  }
+  section .item-p3 {
+    grid-area: item-p3;
+    align-self: start;
+  }
+  section .item-p4 {
+    grid-area: item-p4;
+    align-self: start;
+  }
+  section .item-p5 {
+    grid-area: item-p5;
+    align-self: start;
   }
 }
 
