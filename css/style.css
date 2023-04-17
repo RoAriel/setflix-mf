@@ -342,23 +342,23 @@ footer ul {
 
 @media (min-width: 768px) {
   /*INDEX*/
-  .main-index .conteiner-busqueda {
+  main .conteiner-busqueda {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
     justify-items: center;
     grid-template-areas: ". . item-b1 item-b2";
   }
-  .main-index .item-b1 {
+  main .item-b1 {
     grid-area: item-b1;
     justify-self: center;
   }
-  .main-index .item-b2 {
+  main .item-b2 {
     grid-area: item-b2;
     justify-self: start;
     padding-left: 2.25rem;
   }
-  .main-index .container-section-index .conteiner-cards, .main-index .container-section-index .conteiner-section-serie, .main-index .container-section-index .conteiner-section {
+  main .conteiner-cards, main .conteiner-section-serie, main .conteiner-section {
     background-color: #EDEDED;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -368,17 +368,35 @@ footer ul {
     justify-items: center;
     grid-template-areas: "card-1 card-2" "card-3 card-4";
   }
-  .main-index .container-section-index .conteiner-card .card-1 {
+  main .conteiner-card .card-1 {
     grid-area: card- 1;
   }
-  .main-index .container-section-index .conteiner-card .card-2 {
+  main .conteiner-card .card-2 {
     grid-area: card- 2;
   }
-  .main-index .container-section-index .conteiner-card .card-3 {
+  main .conteiner-card .card-3 {
     grid-area: card- 3;
   }
-  .main-index .container-section-index .conteiner-card .card-4 {
+  main .conteiner-card .card-4 {
     grid-area: card- 4;
+  }
+  section .conteiner-section-serie {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 34rem);
+    grid-template-areas: "item-s1  item-s2" "item-s3  item-s3";
+    justify-items: center;
+  }
+  section .item-s1 {
+    grid-area: item-s1;
+    padding-top: 1rem;
+  }
+  section .item-s2 {
+    grid-area: item-s2;
+  }
+  section .item-s3 {
+    grid-area: item-s3;
+    align-self: center;
   }
 }
 
