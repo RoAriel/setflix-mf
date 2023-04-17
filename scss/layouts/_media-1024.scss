@@ -1,1 +1,93 @@
-@media(min-width:1024px){}
+@media(min-width:1024px) {
+
+    // HEADER
+    .nav-wrapper {
+        nav {
+            display: inline;
+            padding: 0.5rem 0.5rem;
+
+            label {
+                display: none;
+            }
+        }
+
+        nav #toggle:optional~.menu {
+            height: 100%;
+        }
+
+        nav .menu {
+            width: 100%;
+            height: 0;
+        }
+
+        .nav-wrapper {
+            background-position: center top;
+        }
+
+        .menu ul {
+            padding-top: 5rem;
+            padding-bottom: 1rem;
+            list-style: none;
+            @include grid(repeat(4, 1fr), repeat(1, 1fr), center);
+            grid-template-areas:
+                "item-m1 item-m2 item-m3 item-m4";
+
+            li {
+                @for $nro-itm from 1 through 4 {
+                    .item-m#{$nro-itm} {
+                        grid-area: item-m$nro-itm;
+                    }
+                }
+            }
+        }
+    }
+
+    /* INDEX */
+    main {
+        .conteiner-busqueda {
+            grid-template-areas: ".  .item-b1 item-b2";
+        }
+
+        section {
+            .conteiner-cards {
+                @include grid(repeat(4, 1fr), repeat(1, 1fr), center);
+                grid-template-areas:
+                    "card-1 card-2 card-3 card-4";
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+
+    }
+
+    // series
+
+    .section-serie{
+
+        .conteiner-section-serie{
+            @include grid(repeat(3,1fr),repeact(3,34rem),center);
+            grid-template-areas: 
+            " item-s1  item-s1  item-s1" 
+            " item-s2  item-s2  item-s2" 
+            " item-s3  item-s3  item-s3" ;
+
+            .container-temporadas{
+                @include grid(repeat(3,1fr),repeat(2,1fr), center);
+            grid-template-areas: 
+            "item-st1 item-st2 item-st3"
+            ". . .";
+            width: 100%;
+        }
+        .item-st1{
+            grid-area:item-st1;
+        }
+        .item-st2{
+            grid-area:item-st2;
+        }
+        .item-st3{
+            grid-area:item-st3;
+        }
+    }
+
+}
+}

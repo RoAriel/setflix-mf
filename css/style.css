@@ -380,6 +380,7 @@ footer ul {
   main .conteiner-card .card-4 {
     grid-area: card- 4;
   }
+  /*PAGE: Series*/
   section .conteiner-section-serie {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -432,6 +433,84 @@ footer ul {
   }
   .section-busqueda .conteiner-busqueda-av {
     flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .nav-wrapper nav {
+    display: inline;
+    padding: 0.5rem 0.5rem;
+  }
+  .nav-wrapper nav label {
+    display: none;
+  }
+  .nav-wrapper nav #toggle:optional ~ .menu {
+    height: 100%;
+  }
+  .nav-wrapper nav .menu {
+    width: 100%;
+    height: 0;
+  }
+  .nav-wrapper .nav-wrapper {
+    background-position: center top;
+  }
+  .nav-wrapper .menu ul {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    grid-template-areas: "item-m1 item-m2 item-m3 item-m4";
+  }
+  .nav-wrapper .menu ul li .item-m1 {
+    grid-area: item-m 1;
+  }
+  .nav-wrapper .menu ul li .item-m2 {
+    grid-area: item-m 2;
+  }
+  .nav-wrapper .menu ul li .item-m3 {
+    grid-area: item-m 3;
+  }
+  .nav-wrapper .menu ul li .item-m4 {
+    grid-area: item-m 4;
+  }
+  /* INDEX */
+  main .conteiner-busqueda {
+    grid-template-areas: ".  .item-b1 item-b2";
+  }
+  main section .conteiner-cards, main section .conteiner-section-serie, main section .conteiner-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    grid-template-areas: "card-1 card-2 card-3 card-4";
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .section-serie .conteiner-section-serie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeact(3, 34rem);
+    justify-items: center;
+    grid-template-areas: " item-s1  item-s1  item-s1" " item-s2  item-s2  item-s2" " item-s3  item-s3  item-s3";
+  }
+  .section-serie .conteiner-section-serie .container-temporadas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    grid-template-areas: "item-st1 item-st2 item-st3" ". . .";
+    width: 100%;
+  }
+  .section-serie .conteiner-section-serie .item-st1 {
+    grid-area: item-st1;
+  }
+  .section-serie .conteiner-section-serie .item-st2 {
+    grid-area: item-st2;
+  }
+  .section-serie .conteiner-section-serie .item-st3 {
+    grid-area: item-st3;
   }
 }
 
