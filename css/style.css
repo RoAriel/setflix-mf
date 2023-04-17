@@ -512,6 +512,32 @@ footer ul {
   .section-serie .conteiner-section-serie .item-st3 {
     grid-area: item-st3;
   }
+  main section .conteiner-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 17rem);
+    justify-items: center;
+    grid-template-areas: "item-p1  item-p2 item-p2" "item-p1  item-p3 item-p4" "item-p5  item-p5 item-p5";
+  }
+  main section .item-p1 {
+    grid-area: item-p1;
+  }
+  main section .item-p2 {
+    grid-area: item-p2;
+    align-self: self-end;
+  }
+  main section .item-p3 {
+    grid-area: item-p3;
+    align-self: start;
+  }
+  main section .item-p4 {
+    grid-area: item-p4;
+    align-self: start;
+  }
+  main section .item-p5 {
+    grid-area: item-p5;
+    align-self: end;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

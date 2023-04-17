@@ -57,37 +57,76 @@
                 margin-right: 1rem;
             }
         }
-
     }
 
     // series
+    .section-serie {
 
-    .section-serie{
+        .conteiner-section-serie {
+            @include grid(repeat(3, 1fr), repeact(3, 34rem), center);
+            grid-template-areas:
+                " item-s1  item-s1  item-s1"
+                " item-s2  item-s2  item-s2"
+                " item-s3  item-s3  item-s3";
 
-        .conteiner-section-serie{
-            @include grid(repeat(3,1fr),repeact(3,34rem),center);
-            grid-template-areas: 
-            " item-s1  item-s1  item-s1" 
-            " item-s2  item-s2  item-s2" 
-            " item-s3  item-s3  item-s3" ;
+            .container-temporadas {
+                @include grid(repeat(3, 1fr), repeat(2, 1fr), center);
+                grid-template-areas:
+                    "item-st1 item-st2 item-st3"
+                    ". . .";
+                width: 100%;
+            }
 
-            .container-temporadas{
-                @include grid(repeat(3,1fr),repeat(2,1fr), center);
-            grid-template-areas: 
-            "item-st1 item-st2 item-st3"
-            ". . .";
-            width: 100%;
+            .item-st1 {
+                grid-area: item-st1;
+            }
+
+            .item-st2 {
+                grid-area: item-st2;
+            }
+
+            .item-st3 {
+                grid-area: item-st3;
+            }
         }
-        .item-st1{
-            grid-area:item-st1;
-        }
-        .item-st2{
-            grid-area:item-st2;
-        }
-        .item-st3{
-            grid-area:item-st3;
-        }
+
     }
 
-}
+    // Peliculas
+    main {
+        section {
+            .conteiner-section {
+                @include grid(repeat(3, 1fr), repeat(3, 17rem), center);
+                grid-template-areas:
+                    "item-p1  item-p2 item-p2"
+                    "item-p1  item-p3 item-p4"
+                    "item-p5  item-p5 item-p5";
+
+            }
+
+            .item-p1 {
+                grid-area: item-p1;
+            }
+
+            .item-p2 {
+                grid-area: item-p2;
+                align-self: self-end;
+            }
+
+            .item-p3 {
+                grid-area: item-p3;
+                align-self: start;
+            }
+
+            .item-p4 {
+                grid-area: item-p4;
+                align-self: start;
+            }
+
+            .item-p5 {
+                grid-area: item-p5;
+                align-self: end;
+            }
+        }
+    }
 }
