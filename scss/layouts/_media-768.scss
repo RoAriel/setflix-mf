@@ -100,4 +100,18 @@
         }
     }
 
+    /* Busqueda Avanzada*/
+
+    .section-busqueda {
+
+        .conteiner-busqueda {
+            grid-template-areas:
+                ".  item-b1 item-b2 .";
+        }
+
+        .conteiner-busqueda-av {
+            flex-direction: row;
+        }
+
+    }
 }

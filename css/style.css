@@ -426,6 +426,13 @@ footer ul {
     grid-area: item-p5;
     align-self: start;
   }
+  /* Busqueda Avanzada*/
+  .section-busqueda .conteiner-busqueda {
+    grid-template-areas: ".  item-b1 item-b2 .";
+  }
+  .section-busqueda .conteiner-busqueda-av {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
