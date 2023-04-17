@@ -13,3 +13,10 @@
     align-items: $ali-item;
     flex-wrap: $wrap;
 }
+
+@mixin grid($colums,$rows,$just-items){
+    display: grid;
+    grid-template-columns: $colums;
+    grid-template-rows: $rows;
+    justify-items: $just-items;
+}

@@ -1,0 +1,44 @@
+@media(min-width:768px) {
+    /*INDEX*/
+
+    .main-index{
+        .conteiner-busqueda {
+            @include grid(repeat(4, 1fr),repeat(1, 1fr),center);
+            grid-template-areas:
+                ". . item-b1 item-b2";
+        }
+
+        .item-b1 {
+            grid-area: item-b1;
+            justify-self: center;
+        }
+
+        .item-b2 {
+            grid-area: item-b2;
+            justify-self: start;
+            padding-left: 2.25rem;
+        }
+
+        .container-section-index {
+            .conteiner-cards {
+                background-color: $color-main;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                @include grid(repeat(2, 1fr),repeat(2, 1fr),center);
+                grid-template-areas:
+                    "card-1 card-2"
+                    "card-3 card-4";
+            }
+
+            .conteiner-card {
+                @for $nro-card from 1 through 4 {
+                    .card-#{$nro-card} {
+                        grid-area: card-$nro-card;
+                    }
+                }
+
+            }
+
+        }
+    }
+}

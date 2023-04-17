@@ -118,15 +118,15 @@ nav .menu {
   padding: 1rem;
 }
 
-main {
+.main-index {
   background-color: #EDEDED;
   min-height: 100vh;
 }
-main .mini-banner {
+.main-index .mini-banner {
   background-color: rgba(23, 23, 23, 0.7176470588);
   padding-bottom: 0.5rem;
 }
-main .conteiner-busqueda {
+.main-index .conteiner-busqueda {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -134,12 +134,12 @@ main .conteiner-busqueda {
   flex-wrap: nowrap;
   padding: 3rem 3rem;
 }
-main .conteiner-busqueda input {
+.main-index .conteiner-busqueda input {
   padding: 0.3rem;
   border-radius: 2.5rem;
   border: 0.1rem solid #DA0037;
 }
-main .conteiner-busqueda .item-b2 .button-index {
+.main-index .conteiner-busqueda .item-b2 .button-index {
   background: rgba(23, 23, 23, 0.7176470588);
   border-radius: 1rem;
   box-sizing: border-box;
@@ -149,17 +149,19 @@ main .conteiner-busqueda .item-b2 .button-index {
   width: 3.2rem;
   border: 0;
 }
-main .conteiner-busqueda .item-b2 .button-index:active, main .conteiner-busqueda .item-b2 .button-index:focus {
+.main-index .conteiner-busqueda .item-b2 .button-index:active, .main-index .conteiner-busqueda .item-b2 .button-index:focus {
   border-bottom-style: none;
   border-color: rgba(23, 23, 23, 0.7176470588);
   box-shadow: #DA0037 0 0 0.3rem;
 }
-main .conteiner-busqueda .item-b2 .button-index img {
+.main-index .conteiner-busqueda .item-b2 .button-index img {
   object-fit: cover;
   width: 3rem;
   height: 3rem;
 }
-main section .conteiner-cards, main section .conteiner-section, main section .conteiner-section-serie {
+.main-index .container-section-index .conteiner-cards, .main-index .container-section-index .conteiner-section, .main-index .container-section-index .conteiner-section-serie {
+  background: rgb(23, 23, 23);
+  background: linear-gradient(0deg, rgba(23, 23, 23, 0.9093837364) 0%, rgb(218, 0, 55) 90%);
   display: flex;
   flex-direction: column;
   justify-content: none;
@@ -168,8 +170,10 @@ main section .conteiner-cards, main section .conteiner-section, main section .co
   background-color: #EDEDED;
   margin-left: 1rem;
   margin-right: 1rem;
+  border-radius: 2.5rem;
+  margin-bottom: 1rem;
 }
-main section .conteiner-cards .conteiner-card, main section .conteiner-section .conteiner-card, main section .conteiner-section-serie .conteiner-card {
+.main-index .container-section-index .conteiner-cards .conteiner-card, .main-index .container-section-index .conteiner-section .conteiner-card, .main-index .container-section-index .conteiner-section-serie .conteiner-card {
   display: flex;
   flex-direction: column;
   justify-content: none;
@@ -179,7 +183,7 @@ main section .conteiner-cards .conteiner-card, main section .conteiner-section .
   width: 20rem;
   height: 34rem;
 }
-main section .conteiner-cards .conteiner-card img, main section .conteiner-section .conteiner-card img, main section .conteiner-section-serie .conteiner-card img {
+.main-index .container-section-index .conteiner-cards .conteiner-card img, .main-index .container-section-index .conteiner-section .conteiner-card img, .main-index .container-section-index .conteiner-section-serie .conteiner-card img {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -334,6 +338,48 @@ footer ul {
   align-items: none;
   flex-wrap: nowrap;
   list-style: none;
+}
+
+@media (min-width: 768px) {
+  /*INDEX*/
+  .main-index .conteiner-busqueda {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    grid-template-areas: ". . item-b1 item-b2";
+  }
+  .main-index .item-b1 {
+    grid-area: item-b1;
+    justify-self: center;
+  }
+  .main-index .item-b2 {
+    grid-area: item-b2;
+    justify-self: start;
+    padding-left: 2.25rem;
+  }
+  .main-index .container-section-index .conteiner-cards, .main-index .container-section-index .conteiner-section-serie, .main-index .container-section-index .conteiner-section {
+    background-color: #EDEDED;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    grid-template-areas: "card-1 card-2" "card-3 card-4";
+  }
+  .main-index .container-section-index .conteiner-card .card-1 {
+    grid-area: card- 1;
+  }
+  .main-index .container-section-index .conteiner-card .card-2 {
+    grid-area: card- 2;
+  }
+  .main-index .container-section-index .conteiner-card .card-3 {
+    grid-area: card- 3;
+  }
+  .main-index .container-section-index .conteiner-card .card-4 {
+    grid-area: card- 4;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
