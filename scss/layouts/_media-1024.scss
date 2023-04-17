@@ -129,4 +129,17 @@
             }
         }
     }
+
+    // Busqueda Avanzada
+
+    main {
+        section {
+            .container-resultado {
+                @include grid(repeat(2, 0.5fr), repeat(2, 0.5fr), center);
+                grid-template-areas:
+                    "r1 r2"
+                    "r3 r4";
+                }
+        }
+    }
 }

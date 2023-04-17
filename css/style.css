@@ -538,6 +538,13 @@ footer ul {
     grid-area: item-p5;
     align-self: end;
   }
+  main section .container-resultado {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    justify-items: center;
+    grid-template-areas: "r1 r2" "r3 r4";
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
