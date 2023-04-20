@@ -62,7 +62,10 @@ Futuras tecnologías serán agregadas y documentadas aquí.
 
 Podes ver como va quedando el proyecto armado [**SETFLIX**](https://roariel.github.io/setflix-mf/)
 
-  
+## Hosting
+
+Otra opcion de vista para ver como queda [**SETFLIX**](https://setflix-mf.000webhostapp.com/) es a taves del servidor de [**hosting**](https://ar.000webhost.com).
+
 
 # Sass
 
