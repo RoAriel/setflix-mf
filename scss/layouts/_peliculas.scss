@@ -5,6 +5,8 @@
     @extend .conteiner-cards;
 
     .estilo-1 {
+        @include fondo_textos;
+        
         p {
             padding: 1rem 1rem;
             letter-spacing: 0.2rem;
@@ -13,7 +15,10 @@
 
     .estilo-2 {
         @include flex(column, none, none, nowrap);
+        @include fondo_textos;
         padding: 1.5rem 1.5rem;
+        margin-top: 0.70rem;
+        margin-bottom: 0.70rem;
 
         .bold-cursivo {
             font-weight: bold;
@@ -27,5 +32,9 @@
             align-self: center;
         }
 
+    }
+
+    .conteiner-video{
+        margin-bottom: 1rem;
     }
 }
