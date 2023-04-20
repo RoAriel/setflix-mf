@@ -28,12 +28,12 @@
             padding-top: 5rem;
             padding-bottom: 1rem;
             list-style: none;
-            @include grid(repeat(4, 1fr), repeat(1, 1fr), center);
+            @include grid(repeat(5, 1fr), repeat(1, 1fr), center);
             grid-template-areas:
-                "item-m1 item-m2 item-m3 item-m4";
+                "item-m1 item-m2 item-m3 item-m4 item5";
 
             li {
-                @for $nro-itm from 1 through 4 {
+                @for $nro-itm from 1 through 5 {
                     .item-m#{$nro-itm} {
                         grid-area: item-m$nro-itm;
                     }

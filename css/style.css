@@ -499,10 +499,10 @@ footer ul {
     padding-bottom: 1rem;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr);
     justify-items: center;
-    grid-template-areas: "item-m1 item-m2 item-m3 item-m4";
+    grid-template-areas: "item-m1 item-m2 item-m3 item-m4 item5";
   }
   .nav-wrapper .menu ul li .item-m1 {
     grid-area: item-m 1;
@@ -515,6 +515,9 @@ footer ul {
   }
   .nav-wrapper .menu ul li .item-m4 {
     grid-area: item-m 4;
+  }
+  .nav-wrapper .menu ul li .item-m5 {
+    grid-area: item-m 5;
   }
   /* INDEX */
   main .conteiner-busqueda {
