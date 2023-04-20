@@ -11,6 +11,7 @@ Banner     = 'New Tegomin', serif;
 Titulos    = 'Roboto Slab', serif
 Subtitulos = 'Heebo', sans-serif;
 */
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=New+Tegomin&family=Roboto+Slab:wght@100&display=swap");
 * {
   margin: 0;
   padding: 0;
