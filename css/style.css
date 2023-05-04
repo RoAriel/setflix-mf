@@ -188,6 +188,7 @@ main .conteiner-cards .conteiner-card img, main .conteiner-section .conteiner-ca
   object-fit: cover;
   width: 100%;
   height: 100%;
+  border-radius: 0.5rem;
 }
 main .conteiner-cards .conteiner-card .fondo, main .conteiner-section .conteiner-card .fondo, main .conteiner-section-serie .conteiner-card .fondo {
   background: rgb(23, 23, 23);
