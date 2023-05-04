@@ -112,7 +112,7 @@
                 grid-area: item-p2;
                 align-self: center;
                 height: auto;
-                
+
             }
 
             .item-p3 {
@@ -135,13 +135,40 @@
     // Busqueda Avanzada
 
     main {
-        section {
-            .container-resultado {
-                @include grid(repeat(2, 0.5fr), repeat(2, 0.5fr), center);
-                grid-template-areas:
-                    "r1 r2"
-                    "r3 r4";
+        .section-sugerencias {
+            .center-text{
+                margin-left: 40%;
+            }
+
+            .container-sugerencias {
+                //@include grid(repeat(2, 0.5fr), repeat(2, 0.5fr), center);
+                //grid-template-areas:
+                //    "r1 r2"
+                //    "r3 r4";
+
+
+                display: flex;
+                gap:0;
+                margin-left: 25%;
+                width: 60rem;
+                height: 40rem;
+
+                .img-suge {
+                    width: 0;
+                    flex-grow: 1;
+                    object-fit: cover;
+                    opacity: .8;
+                    transition: .4s ease;
+
                 }
+
+                .img-suge:hover {
+                    cursor: pointer;
+                    width: 10rem;
+                    opacity: 1;
+                    filter: contrast(120%);
+                }
+            }
         }
     }
 }

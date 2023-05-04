@@ -328,17 +328,40 @@ main .conteiner-cards .conteiner-card .fondo, main .conteiner-section .conteiner
   border: 0.1rem solid #DA0037;
 }
 
-section .container-resultado {
+.section-sugerencias .center-text {
+  margin-left: 25%;
+}
+.section-sugerencias .container-sugerencias {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: none;
   flex-wrap: wrap;
   padding: 0.3rem 0.3rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.section-sugerencias .container-sugerencias .img-suge {
+  position: relative;
+  width: 20rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+.section-sugerencias .container-sugerencias .img-suge:hover img {
+  transform: scale(1.15);
+}
+.section-sugerencias .container-sugerencias .img-suge img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease;
+}
+.section-sugerencias .container-sugerencias .img-suge:hover {
+  transform: translateY(0);
 }
 
 .inp-altura {
-  height: 2.5rem;
+  height: 5rem;
 }
 
 .section-nosotros {
@@ -478,6 +501,9 @@ footer ul {
   .section-busqueda .conteiner-busqueda-av {
     flex-direction: row;
   }
+  .resultados-busqueda .center-text {
+    margin-left: 40%;
+  }
 }
 @media (min-width: 1024px) {
   .nav-wrapper nav {
@@ -586,12 +612,28 @@ footer ul {
     grid-area: item-p5;
     align-self: end;
   }
-  main section .container-resultado {
-    display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
-    grid-template-rows: repeat(2, 0.5fr);
-    justify-items: center;
-    grid-template-areas: "r1 r2" "r3 r4";
+  main .section-sugerencias .center-text {
+    margin-left: 40%;
+  }
+  main .section-sugerencias .container-sugerencias {
+    display: flex;
+    gap: 0;
+    margin-left: 25%;
+    width: 60rem;
+    height: 40rem;
+  }
+  main .section-sugerencias .container-sugerencias .img-suge {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.4s ease;
+  }
+  main .section-sugerencias .container-sugerencias .img-suge:hover {
+    cursor: pointer;
+    width: 10rem;
+    opacity: 1;
+    filter: contrast(120%);
   }
 }
 

@@ -39,6 +39,7 @@
         }
 
     }
+
     /*PAGE: Series*/
     section {
         .conteiner-section-serie {
@@ -47,10 +48,12 @@
                 "item-s1  item-s2"
                 "item-s3  item-s3";
         }
-        .estilo-1{
-            margin-top : 4rem;
+
+        .estilo-1 {
+            margin-top: 4rem;
             padding-top: 0;
         }
+
         .item-s1 {
             grid-area: item-s1;
             padding-top: 1rem;
@@ -117,6 +120,12 @@
 
         .conteiner-busqueda-av {
             flex-direction: row;
+        }
+    }
+
+    .resultados-busqueda {
+        .center-text {
+            margin-left: 40%;
         }
 
     }
