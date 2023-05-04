@@ -85,16 +85,19 @@
         .item-p2 {
             grid-area: item-p2;
             align-self: start;
+            height: 34rem;
+            overflow: scroll;
+            margin-top: 0.4rem;
         }
 
         .item-p3 {
             grid-area: item-p3;
-            align-self: start;
+            align-self: center;
         }
 
         .item-p4 {
             grid-area: item-p4;
-            align-self: start;
+            align-self: center;
         }
 
         .item-p5 {

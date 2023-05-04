@@ -99,8 +99,8 @@
                 @include grid(repeat(3, 1fr), repeat(3, 17rem), center);
                 grid-template-areas:
                     "item-p1  item-p2 item-p2"
-                    "item-p1  item-p3 item-p4"
-                    "item-p5  item-p5 item-p5";
+                    "item-p1  item-p2 item-p2"
+                    "item-p5  item-p3 item-p4";
 
             }
 
@@ -110,7 +110,9 @@
 
             .item-p2 {
                 grid-area: item-p2;
-                align-self: self-end;
+                align-self: center;
+                height: auto;
+                
             }
 
             .item-p3 {
