@@ -136,8 +136,8 @@
 
     main {
         .section-sugerencias {
-            .center-text{
-                margin-left: 40%;
+            .center-text {
+                margin-left: 45%;
             }
 
             .container-sugerencias {
@@ -148,7 +148,7 @@
 
 
                 display: flex;
-                gap:0;
+                gap: 0;
                 margin-left: 25%;
                 width: 60rem;
                 height: 40rem;
@@ -164,11 +164,28 @@
 
                 .img-suge:hover {
                     cursor: pointer;
-                    width: 10rem;
+                    width: 20rem;
                     opacity: 1;
                     filter: contrast(120%);
                 }
             }
+        }
+    }
+
+    // Nosotros
+    .section-nosotros {
+        .conteiner-nosotros {
+            .lema {
+                margin-left: 20%;
+            }
+
+            .sub-lema {
+                margin-left: 40%;
+            }
+        }
+
+        .logo {
+            margin-left: 31rem;
         }
     }
 }
