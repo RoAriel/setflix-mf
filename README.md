@@ -13,6 +13,7 @@ Proyecto para el curso de [**Desarrollo Web**](https://www.coderhouse.com/online
   
 
 La idea es maquetar una web de contenido multimedia el cual estará dedicado a series y películas.
+Dicho sitio en su principio sera responsive para pantallas 320px 768px y 1024px pero siempre puede mejorar!
 
   
 
@@ -25,6 +26,7 @@ La idea es maquetar una web de contenido multimedia el cual estará dedicado a s
 Las tecnologías utilizadas para el desarrollo de esta web serán:
 
   
+- Figma para maquetar la idea en una primer instancia [**SETFLIX Wireframe**](https://www.figma.com/file/wj6afU14zTfSsQXi0i84hX/setflix?node-id=2%3A161&t=NUY6WXbiyLqNJITq-1)
 
 - HTML
 
@@ -64,8 +66,7 @@ Podes ver como va quedando el proyecto armado [**SETFLIX**](https://roariel.gith
 
 ## Hosting
 
-Otra opcion de vista para ver como queda [**SETFLIX**](https://setflix-mf.000webhostapp.com/) es a taves del servidor de [**hosting**](https://ar.000webhost.com).
-
+Podes ver el proyecto deployado por [InfinityFree](https://www.infinityfree.net/) aca: [**SETFLIX**](http://setflix.infinityfreeapp.com/)
 
 # Sass
 
