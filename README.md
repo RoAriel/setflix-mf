@@ -64,9 +64,6 @@ Futuras tecnologías serán agregadas y documentadas aquí.
 
 Podes ver como va quedando el proyecto armado [**SETFLIX**](https://roariel.github.io/setflix-mf/)
 
-## Hosting
-
-Podes ver el proyecto deployado por [InfinityFree](https://www.infinityfree.net/) aca: [**SETFLIX**](http://setflix.infinityfreeapp.com/)
 
 # Sass
 
